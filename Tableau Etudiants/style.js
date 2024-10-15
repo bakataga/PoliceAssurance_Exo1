@@ -61,7 +61,7 @@ console.log(EtudiantNoteSupA15);
 
 
 /* calculer moyenne */
-function calculerMoyenne(note){
+function calculerMoyenne(etudiants){
     let somme = 0;
     for (let i = 0; i < etudiants.length; i++) {
         somme += etudiants[i].note;
