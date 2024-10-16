@@ -10,20 +10,20 @@ function calculTarif(age, anneesPermis, nombreAccidents) {
     } else if ((age < 25 && anneesPermis >= 2 && nombreAccidents === 0) || (age >= 25 && anneesPermis < 2)) {
         {
          return   tarif = "C";
-        } else if (nombreAccidents === 1) {
-            tarif = "D";
+        } 
+    }else if (nombreAccidents === 1) {
+          return  tarif = "D";
         }
-    } else if (age >= 25 && anneesPermis >= 2 &&nombreAccidents === 0) {
-         {
-            tarif = "B";
+    else if (age >= 25 && anneesPermis >= 2 &&nombreAccidents === 0) {
+   
+           return tarif = "B";
         } else if (nombreAccidents === 1) {
-            tarif = "C";
+          return  tarif = "C";
         } else if (nombreAccidents === 2) {
-            tarif = "D";
+           return tarif = "D";
         }
-    }
-
-    return tarif;
+{
+    return tarif;}
 }
 /* Appplication de la fidélité */
 function contrat(annéesContrat)

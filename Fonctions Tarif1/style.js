@@ -44,11 +44,11 @@ function tarifJeune(age,annéesPermis,nombreAccident){
     
     if (age<=25 && annéesPermis>=2 && nombreAccident==0 )
 {return tarifC;}
-    if (age>=25 && annéesPermis<2 && nombreAccident==0)
+  else  if (age>=25 && annéesPermis<2 && nombreAccident==0)
   {return tarifC;}
-    if (age<=25 && annéesPermis>=2 && nombreAccident==1)
+   else if (age<=25 && annéesPermis>=2 && nombreAccident==1)
     {return tarifD;}
-    if (age>=25 && annéesPermis<2 && nombreAccident==1)
+   else if (age>=25 && annéesPermis<2 && nombreAccident==1)
     {return tarifD;}
 else { 
     return "condition non remplies pour un tarif spécifique" 
@@ -61,9 +61,9 @@ function tarifAccident (age,annéesPermis,nombreAccident)
    
     if (age>=25 && annéesPermis>2 && nombreAccident==0)
 {return tarifB }
-    if(age>=25 && annéesPermis>=2 && nombreAccident==1 )
+  else  if(age>=25 && annéesPermis>=2 && nombreAccident==1 )
     {return tarifC }
-    if (age>=25 && annéesPermis>=2 && nombreAccident==2)
+  else  if (age>=25 && annéesPermis>=2 && nombreAccident==2)
     {return tarifD }
     else{
         return "condition non remplies pour un tarif spécifique"
