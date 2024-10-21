@@ -9,7 +9,7 @@ la fonction s'appellerait à l'infini.
 avec des paramètres modifiés 
 pour progresser vers la condition de base. */
 let n=3;
-function Hanoi(n, source, auxiliaire, destination) {
+function Hanoi(n, A, B, C) {
     
     
     if (n === 0) {
@@ -17,11 +17,11 @@ function Hanoi(n, source, auxiliaire, destination) {
         return n;
     }
     // Déplacer n-1 disques de la source à l'auxiliaire
-    Hanoi(n - 1, source, auxiliaire, destination);
+    Hanoi(n - 1, A, C, B);
     // Déplacer le disque restant de la source à la destination
-    deplacerDisque(n,source,destination)
+    deplacerDisque(n,A,C)  /* au lieu de mettre un console. log je cree une fonction */
     // Déplacer n-1 disques de l'auxiliaire à la destination
-   Hanoi(n - 1, auxiliaire, destination, source);
+   Hanoi(n - 1, B, A, C);
 }
 
 

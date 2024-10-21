@@ -110,6 +110,14 @@ function afficherFidelite ()
 }
 
  
-
+/* let variable=valeur>1?-1:0;
+               =      if   else
+               switch()
+               si case1
+               break
+               reponse="a"
+               si case2
+               reponse=b 
+               break */
 
     

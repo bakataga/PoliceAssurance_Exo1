@@ -5,7 +5,7 @@
 
 let etudiants=[
     {etudiant:"Agathe", note:14}, 
-    {etudiant:"wlad",note:17},
+    {etudiant:"Wlad",note:17},
     {etudiant:"Yohann",note:16},
     {etudiant:"Laureline",note:17},
     {etudiant:"Christian",note:12},
@@ -13,11 +13,17 @@ let etudiants=[
     {etudiant:"Kaique",note:17},
     {etudiant:"Angélique",note:18},
     {etudiant:"Dorian",note:15},
-    {etudiant:"Emmanuel",note:16},
+    {etudiant:"emmanuel",note:16},
     {etudiant:"Jeremy",note:13},
     {etudiant:"Sylvain",note:17},
     {etudiant:"Yann",note:15},
-    {etudiant:"Amin",note:16} ];
+    {etudiant:"Amin",note:16}] ;
+
+
+
+
+/* 
+
 /* déclaration de la fonction*/
     function trierEtudiantsAlpha(etudiants) {
         /* on va comparer un element sur toute la longueur du tableau  et on itere sur chaque element */
@@ -27,7 +33,7 @@ let etudiants=[
             /* on initialise une variable avec la valeur i-1 pour commencer par l'element precedent du tableau */
  /* initialisation de la boucle interieur */let j=i-1;
 /* boucle interieure: tant que j est superieur ou egal a o et que le nom de l'etudiant a l'index j est alphabetiquement plus grand que le nom de l'etudiant stocké dans temp */
-         while (j>=0 && etudiants[j].etudiant.toLowerCase()>temp.etudiant.toLowerCase())
+         while (j>=0 && etudiants[j].etudiant.toLowercase() > temp.etudiant.toLowercase())
             {
            /*deplacement vers la droite on deplace l'etudiant a l'index j vers l'index j+1  */     
           etudiants[j+1]  = etudiants[j];
@@ -38,6 +44,7 @@ let etudiants=[
          etudiants[j+1]=temp;
         }
        return etudiants;
+
     }
 
     let etudiantsTri = trierEtudiantsAlpha(etudiants);
@@ -73,5 +80,15 @@ function calculerMoyenne(etudiants){
 let moyenne = calculerMoyenne(etudiants);
 console.log("La moyenne des notes est : " + moyenne);
 
+
+/* function inclureDonneeExclu(){
+    console.log(etudiantsTri)
+    for (let i = 0; i < etudiants.length; i++){
+        if(etudiant!==etudiantsTri)
+           { return etudiants[i]===etudiantsTri}
+        else{return true}
+
+    }
+    }console.log (inclureDonneeExclu()) */
 
 
